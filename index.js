@@ -2,7 +2,11 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const port = 8080;
+const connection = require("./database/database");
 const func = ()=>{console.log("Conexão com o Servidor OK")};
+
+connection.authenticate().then(()=>{console.log("Conexão Realizada")})
+.catch((erro)=>{console.log(erro)});
 
 app.set('view engine','ejs');
 app.use(express.static('public'));
