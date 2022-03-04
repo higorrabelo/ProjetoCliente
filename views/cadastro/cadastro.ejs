@@ -1,0 +1,53 @@
+<%- include('../partials/header.ejs')%>
+<body>
+    <%- include('../partials/menu.ejs')%>
+    
+    <div class="container">
+        <form action="/cadastrar" method="POST">
+
+            <h1 class="d-flex justify-content-center">Cadastrar Usuário</h1>
+            <hr>
+            <div class="row">
+                <div class="col-4">
+                    <h3>Informações de usuário</h3>
+                    <label>Usuario:</label><br>
+                    <input class="form-control" type="text" name="nome" placeholder="Digite seu Nome"><br>
+                    <label>Email:</label><br>
+                    <input class="form-control" type="email" name="email" placeholder="Digite seu Nome"><br>
+                    <label>Senha:</label><br>
+                    <input class="form-control" type="password" name="senha" placeholder="Digite seu Nome"><br>
+                    <label>Confirmar Senha:</label><br>
+                    <input class="form-control" type="password" name="senha2" placeholder="Digite seu Nome"><br>
+                    <label>Telefone:</label><br>
+                    <input class="form-control" type="text" name="telefone" placeholder="Digite seu Nome"><br>
+                </div>
+                <div class="col-4">
+                    <h3>Informações de Localidade</h3>
+                    <label>Endereço:</label><br>
+                    <input class="form-control" type="text" name="nome" placeholder="Digite seu Nome"><br>
+                    <label>Bairro:</label><br>
+                    <input class="form-control" type="text" name="nome" placeholder="Digite seu Nome"><br>
+                    <label>Cidade:</label><br>
+                    <input class="form-control" type="text" name="nome" placeholder="Digite seu Nome"><br>
+                    <label>Estado:</label><br>
+                    <input class="form-control" type="text" name="nome" placeholder="Digite seu Nome"><br>
+                </div>
+                <div class="col-4">
+                    <h3>Informações de Redes Sociais</h3>
+                    
+                    
+                    
+                </div>
+            </div> 
+            <hr>
+            <p class="d-flex justify-content-center">
+                <button class="btn btn-primary">Cadastrar</button>
+            </p>
+            
+        </form>
+    </div>
+
+    <a href="/">voltar</a>
+
+</body>
+<%- include('../partials/footer.ejs')%>
