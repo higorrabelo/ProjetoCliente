@@ -1,0 +1,18 @@
+<%- include('partials/header.ejs') %>
+<body>
+    <%- include('partials/menu.ejs') %>
+    <div class="container">
+        <h1>Contato</h1>
+        <hr>
+        <form action="/enviar" method="POST">
+            <label>Email</label>
+            <input class="form-control" type="email" name="titulo" placeholder="Insira seu Email" required> <hr>
+            <p>
+                <textarea class="form-control" name="mensagem" rows="10"></textarea>
+            </p>
+            <div class="d-flex justify-content-center"><button type="submit" class="btn btn-secondary">Enviar</button></div>
+        </form>
+    </div>
+
+</body>
+<%- include('partials/footer.ejs') %>

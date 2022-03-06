@@ -1,13 +1,21 @@
 {
   "name": "projeto2",
   "version": "1.0.0",
-  "description": "Crud com banco de Dados",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/higorrabelo/ProjetoCliente.git"
+  },
   "author": "Higor Rabelo",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/higorrabelo/ProjetoCliente/issues"
+  },
+  "homepage": "https://github.com/higorrabelo/ProjetoCliente#readme",
   "dependencies": {
     "body-parser": "^1.19.2",
     "ejs": "^3.1.6",

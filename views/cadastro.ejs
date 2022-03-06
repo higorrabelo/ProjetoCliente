@@ -1,0 +1,40 @@
+<%- include('partials/header.ejs') %>
+<body>
+    <%- include('partials/menu.ejs') %>
+    <div class="container">
+        <h1>Cadastro</h1>
+        <hr>
+
+    <form action="/cadastrar" method="POST">   
+        <div class="row">
+            <div class="col-6">
+                <p><label>Nome Completo</label>
+                <input class="form-control" type="text" name="nome" placeholder="Digite seu nome" required></p>
+                <p><label>Apelido</label>
+                <input class="form-control" type="text" name="apelido" placeholder="Digite como quer ser chamado" required></p>
+                <p><label>E-mail</label>
+                <input class="form-control" type="email" name="email" placeholder="exemplo@exemplo.com" required></p>
+                <p><label>Senha</label>
+                <input class="form-control" type="password" name="senha" placeholder="Sua Senha" required></p>
+                <p><label>Repetir Senha</label>
+                <input class="form-control" type="password" name="repeteSenha" placeholder="Confirmar Senha"></p>
+            </div>
+            <div class="col-6">
+                <p><label>Telefone</label>
+                <input class="form-control" type="text" name="telefone" placeholder="Digite seu Telefone" required></p>
+                <p><label>Endereço</label>
+                <input class="form-control" type="text" name="endereco" placeholder="Digite seu Endereço" required></p>
+                <p><label>Bairro</label>
+                <input class="form-control" type="text" name="bairro" placeholder="Bairro" required></p>
+                <p><label>Cidade</label>
+                <input class="form-control" type="text" name="cidade" placeholder="Cidade" required></p>
+                <p><label>Estado</label>
+                <input class="form-control" type="text" name="estado" placeholder="Estado" required></p>
+            </div>
+        </div>
+        <div class="row justify-content-center"><button class="btn btn-secondary" type="submit">Cadastrar</button></div>
+    </form>   
+    </div>
+
+</body>
+<%- include('partials/footer.ejs') %>
